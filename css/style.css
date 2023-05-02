@@ -26,7 +26,6 @@ HEADER SETTING
     background-color: rgb(253, 136, 52);
     display: flex;
     justify-content: space-between;
-    
 }
 
 .left-logo, .right-menu{
@@ -53,7 +52,6 @@ HEADER SETTING
 /*
 FIRST SECTION MAIN
 */
-
 .first{
     background-color: yellow;
     margin-bottom: 50px;
@@ -94,7 +92,6 @@ TWO SECTION MAIN
 /*
 THREE SECTION MAIN
 */
-
 .three{
     background-color: yellow;
     margin-bottom: 50px;
@@ -111,7 +108,6 @@ THREE SECTION MAIN
 /*
 FOUR SECTION MAIN
 */
-
 .four{
     background-color: darkgreen;
     margin-bottom: 50px;
@@ -202,7 +198,6 @@ DESKTOP
 /*
 LARGE DESKTOP
 */
-
 @media screen and (min-width: 1200px) {
     .row-menu{
         max-width: 1170px;
