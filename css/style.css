@@ -13,13 +13,14 @@ HEADER SETTING - MOBILE FIRST
 .container{
     background-color: rgb(41, 110, 249);
     height: 75px;
-    width: 100%;
+    max-width: 100%;
+    margin: auto;
 }
 
 .row-menu{
     height: 100%;
     margin: 0 auto;
-    width: 100%;
+    max-width: 450px;
     align-items: center;
     background-color: chocolate;
     display: flex;
@@ -45,4 +46,52 @@ HEADER SETTING - MOBILE FIRST
 .extended{
     background-color: red;
     display: none;
+}
+
+/*
+TABLET
+*/
+@media screen and (min-width: 768px) {
+    .row-menu{
+        max-width: 750px;
+    }
+
+    .extended{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+/*
+DESKTOP
+*/
+@media screen and (min-width: 991px) {
+    .extended{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
+
+/*
+LARGE DESKTOP
+*/
+
+@media screen and (min-width: 1200px) {
+    .row-menu{
+        max-width: 1170px;
+    }
+
+    .extended{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
+    }
 }
