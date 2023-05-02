@@ -79,10 +79,28 @@ TWO SECTION MAIN
 */
 .two{
     background-color: darkgreen;
+    margin-bottom: 50px;
 }
 
 
 .col-50{
+    width: calc(100% - 20px);
+    background-color:rgb(255, 157, 229);
+    height: 450px;
+    margin: 10px;
+    border-radius: 35px;
+}
+
+/*
+THREE SECTION MAIN
+*/
+
+.three{
+    background-color: yellow;
+    margin-bottom: 50px;
+}
+
+.col-100{
     width: calc(100% - 20px);
     background-color:rgb(255, 157, 229);
     height: 450px;
