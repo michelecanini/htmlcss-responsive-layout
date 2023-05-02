@@ -126,6 +126,15 @@ FOUR SECTION MAIN
 }
 
 /*
+FIVE SECTION MAIN
+*/
+
+.five{
+    background-color: yellow;
+    margin-bottom: 50px;
+}
+
+/*
 TABLET
 */
 @media screen and (min-width: 768px) {
