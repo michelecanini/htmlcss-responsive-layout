@@ -6,3 +6,13 @@ GENERAL SETTING
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+HEADER SETTING - MOBILE FIRST
+*/
+.container{
+    background-color: rgb(41, 110, 249);
+    height: 75px;
+    width: 375px;
+    margin: 0 auto;
+}
