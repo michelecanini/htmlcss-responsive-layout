@@ -1,5 +1,5 @@
 /*
-GENERAL SETTING
+GENERAL SETTING - MOBILE FIRST
 */
 *{
     margin: 0;
@@ -8,13 +8,14 @@ GENERAL SETTING
 }
 
 /*
-HEADER SETTING - MOBILE FIRST
+HEADER SETTING 
 */
 .container{
     background-color: rgb(41, 110, 249);
     height: 75px;
     max-width: 100%;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .row-menu{
@@ -25,6 +26,7 @@ HEADER SETTING - MOBILE FIRST
     background-color: chocolate;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .left-logo, .right-menu{
@@ -40,13 +42,32 @@ HEADER SETTING - MOBILE FIRST
 }
 
 .hamburger{
-    background-color: blue;
+    background-color: rgb(25, 0, 255);
 }
 
 .extended{
     background-color: red;
     display: none;
 }
+
+/*
+FIRST SECTION MAIN
+*/
+
+.row{
+    display: flex;
+    flex-direction: column;
+    margin:auto
+}
+
+.col-double, .col-33{
+    width: calc(100% - 20px);
+    background-color: rgb(255, 127, 221);
+    height: 500px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
 
 /*
 TABLET
@@ -62,6 +83,19 @@ TABLET
 
     .hamburger{
         display: block;
+    }
+
+    .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .col-double{
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+    .col-33{
+        width: calc(100% / 3 - 20px)
     }
 }
 
@@ -84,6 +118,10 @@ LARGE DESKTOP
 
 @media screen and (min-width: 1200px) {
     .row-menu{
+        max-width: 1170px;
+    }
+
+    .row{
         max-width: 1170px;
     }
 
