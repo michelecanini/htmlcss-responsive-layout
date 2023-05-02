@@ -128,10 +128,16 @@ FOUR SECTION MAIN
 /*
 FIVE SECTION MAIN
 */
-
 .five{
     background-color: yellow;
     margin-bottom: 50px;
+}
+
+/*
+FOOTER
+*/
+.six{
+    background-color: darkgreen;
 }
 
 /*
