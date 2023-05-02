@@ -117,6 +117,14 @@ FOUR SECTION MAIN
     margin-bottom: 50px;
 }
 
+.col-33b{
+    width: calc(100% - 20px);
+    background-color: rgb(255, 157, 229);
+    height: 450px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
 /*
 TABLET
 */
@@ -149,6 +157,10 @@ TABLET
     .col-50{
         width: calc(100% - 20px)
     }
+
+    .col-33b{
+        width: calc(100% / 2 - 20px)
+    }
 }
 
 /*
@@ -165,6 +177,10 @@ DESKTOP
 
     .col-50{
         width: calc(50% - 20px)
+    }
+
+    .col-33b{
+        width: calc(100% / 3 - 20px)
     }
 }
 
