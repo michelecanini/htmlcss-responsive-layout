@@ -8,6 +8,12 @@ GENERAL SETTING - MOBILE FIRST
 }
 
 /*
+UTILITY CLASS
+*/
+
+
+
+/*
 HEADER SETTING 
 */
 .container{
@@ -23,9 +29,9 @@ HEADER SETTING
     margin: 0 auto;
     max-width: 450px;
     align-items: center;
-    background-color: rgb(253, 136, 52);
     display: flex;
     justify-content: space-between;
+    border: 1px dashed black;
 }
 
 .left-logo{
@@ -44,9 +50,8 @@ HEADER SETTING
 }
 
 .right-menu{
-    background-color: rgb(0, 255, 38);
     border: 1px dashed black;
-    width: 120px;
+    width: 10%;
     height: 100%
 }
 
@@ -71,9 +76,25 @@ HEADER SETTING
 .extended{
     background-color: red;
     display: none;
+    position: relative;
 }
 
+.extended ul{
+    list-style: none;
+    position: absolute;
+    right: -40%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.extended li{
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+.extended a{
+    text-decoration: none;
+}
 
 /*
 FIRST SECTION MAIN
@@ -219,11 +240,17 @@ DESKTOP
     .col-33b{
         width: calc(100% / 3 - 20px)
     }
+
+    .right-menu{
+        border: 1px dashed black;
+        min-width: 500px;
+    }
 }
 
 /*
 LARGE DESKTOP
 */
+
 @media screen and (min-width: 1200px) {
     .row-menu{
         max-width: 1170px;
@@ -239,5 +266,10 @@ LARGE DESKTOP
 
     .hamburger{
         display: none;
+    }
+
+    .right-menu{
+        border: 1px dashed black;
+        min-width: 500px;
     }
 }
