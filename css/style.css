@@ -28,7 +28,22 @@ HEADER SETTING
     justify-content: space-between;
 }
 
-.left-logo, .right-menu{
+.left-logo{
+    position: relative;
+    border: 1px dashed black;
+    width: 120px;
+    height: 100%
+    
+}
+
+.left-logo > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right-menu{
     background-color: rgb(0, 255, 38);
     border: 1px dashed black;
     width: 120px;
@@ -42,12 +57,23 @@ HEADER SETTING
 
 .hamburger{
     background-color: rgb(25, 0, 255);
+    position: relative;
+}
+
+.hamburger > i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
 }
 
 .extended{
     background-color: red;
     display: none;
 }
+
+
 
 /*
 FIRST SECTION MAIN
